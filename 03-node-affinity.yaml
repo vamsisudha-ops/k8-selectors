@@ -18,21 +18,21 @@ spec:
           #   values:
           #   - ssd
       # soft rule
-      preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
-        preference:
-          matchExpressions:
-          - key: project
-            operator: In
-            values:
-            - roboshop
-      - weight: 10
-        preference:
-          matchExpressions:
-          - key: project
-            operator: In
-            values:
-            - amazon
+      # preferredDuringSchedulingIgnoredDuringExecution:
+      # - weight: 100
+      #   preference:
+      #     matchExpressions:
+      #     - key: project
+      #       operator: In
+      #       values:
+      #       - roboshop
+      # - weight: 10
+      #   preference:
+      #     matchExpressions:
+      #     - key: project
+      #       operator: In
+      #       values:
+      #       - amazon
   containers:
   - name: nginx
     image: nginx
